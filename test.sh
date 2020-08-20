@@ -8,7 +8,8 @@ function move_file(){
     fi
     mv $1 ./$date
 }
-read -p "please give the rar file name in full " rar_file
+# read -p "please give the rar file name in full " rar_file
+rar_file=$1
 echo "filename is ${rar_file}"
 dir="./${rar_file%.*}"
 if [ ! -d "$dir" ];then
